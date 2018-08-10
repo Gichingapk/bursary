@@ -1,0 +1,24 @@
+var footerSalesForm = MktoForm.addForm({
+  id: '1120',
+  modal: true,
+  modalTriggerClass: 'mkto-footer-contact-sales',
+  topText: {
+    title: 'Contact Sales',
+    body: 'Ready to see how Lucidchart can benefit your entire company? Simply fill out the form below, and our team will be in touch shortly! Or feel free to give us a call at 888-875-6970.',
+    note: 'Note: Unfortunately we cannot answer any support questions submitted through this form. For support, please contact us <a style="color: #f78d1e !important;" href="https://lucidchart.zendesk.com/hc/en-us/articles/213497983-Contact-Support" target="_bl' +
+        'ank">here</a>.'
+  }
+});
+
+var footerDemoForm = MktoForm.addForm({
+  id: '1060',
+  modal: true,
+  modalTriggerClass: 'mkto-footer-request-demo',
+  confirm: {
+    heading: "Thank you!",
+    body: "We'll be in touch soon."
+  },
+  topText: {
+    title: 'Request a Demo'
+  }
+});

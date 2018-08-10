@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.43" height="25.57" viewBox="0 0 25.43 25.57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #383f82;
+      }
+
+      .cls-4 {
+        fill: #09ebaf;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(-2.29 -2.21)">
+      <rect class="cls-1" width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <title>contact-us</title>
+  <g class="cls-2">
+    <g>
+      <path class="cls-3" d="M23.48,2.21h-17A4.21,4.21,0,0,0,2.29,6.45V17.86A4.32,4.32,0,0,0,6.52,22.1H8v4.24a1.4,1.4,0,0,0,2.45,1l5.22-5.22h7.82a4.32,4.32,0,0,0,4.24-4.24V6.45A4.32,4.32,0,0,0,23.48,2.21Zm1.3,15.65a1.46,1.46,0,0,1-1.47,1.47H14.84a1.41,1.41,0,0,0-1,.49L10.6,23.08V20.8a1.46,1.46,0,0,0-1.47-1.47H6.36a1.46,1.46,0,0,1-1.47-1.47V6.45A1.46,1.46,0,0,1,6.36,5H23.48a1.46,1.46,0,0,1,1.47,1.47l-.16,11.41Z" transform="translate(-2.29 -2.21)"/>
+      <path class="cls-4" d="M20.54,7.92H9.29a1.47,1.47,0,0,0,0,2.93H20.54a1.47,1.47,0,0,0,0-2.93Z" transform="translate(-2.29 -2.21)"/>
+      <path class="cls-4" d="M15,13.62H9.29a1.47,1.47,0,0,0,0,2.93H15a1.46,1.46,0,0,0,1.47-1.47A1.72,1.72,0,0,0,15,13.62Z" transform="translate(-2.29 -2.21)"/>
+    </g>
+  </g>
+</svg>

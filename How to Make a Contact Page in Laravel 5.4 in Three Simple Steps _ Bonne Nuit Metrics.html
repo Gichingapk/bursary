@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://www.bnmetrics.com/blog/simple-contact-page-tutorial-laravel-54 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- core CSS -->
+    <link href="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/app.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.bnmetrics.com/favicon.ico">  
+
+    
+    <script async="" src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/analytics.js.download"></script><script>
+        window.Laravel = {"csrfToken":"5d1TGTmww8u7LW1Ci3nndqZIR5euIKzwBIw3xOKh"};
+    </script>
+    <script src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/app.js.download"></script>
+    
+    
+          
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76629879-4', 'auto');
+    ga('send', 'pageview');
+
+  </script><!--SEO -->
+    <link rel="canonical" href="https://www.bnmetrics.com/blog/simple-contact-page-tutorial-laravel-54">
+
+    <meta name="description" content=" Following this tutorial, You will be able to make your own contact and start receiving emails from your Laravel application in just 10 minutes! Why don&#39;t you give it a go! ">
+    <title>
+        How to Make a Contact Page in Laravel 5.4 in Three Simple Steps | Bonne Nuit Metrics    </title>
+<script src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/embed.js.download" data-timestamp="1532679428541"></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.3999ac261b914f8b8b5e85df0ff3eaea.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.40e1175903c8bfb9e65177eace372a69.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.2540bb2ef6fac66d558411d802126c7e.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"><script src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/alfalfa.4a5fcca1fe50a757044dfd331b660625.js.download" async="" charset="UTF-8"></script></head>
+
+<body>
+    
+  <div id="wrapper">
+      
+          
+    <div id="header">
+                    <!--Nav Bar-->
+            <nav id="luna-nav" class="navbar navbar-toggleable-md navbar-inverse luna-nav fixed-top luna-nav-display">
+    <div class="navbar-header">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+            menu <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.bnmetrics.com/">
+            <img class="luna-icon" src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/bunny-icon.png" alt="logo">
+            <span class="hidden-xs-down brand-title">BONNE NUIT METRICS</span>
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbars">
+        <ul class="navbar-nav ml-auto">
+
+                                <li class="nav-item ">
+                <a class="nav-link" href="https://www.bnmetrics.com/"> Home
+                                    </a>
+            </li>
+                        <li class="nav-item ">
+                <a class="nav-link" href="https://www.bnmetrics.com/about"> About
+                                    </a>
+            </li>
+                        <li class="nav-item  active ">
+                <a class="nav-link" href="https://www.bnmetrics.com/blog"> Blog
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+            </li>
+                        <li class="nav-item ">
+                <a class="nav-link" href="https://www.bnmetrics.com/contact"> Contact
+                                    </a>
+            </li>
+                        <li class="nav-item ">
+                <a class="nav-link" href="https://www.bnmetrics.com/projects"> Projects
+                                    </a>
+            </li>
+            
+                 </ul>
+
+    </div>
+
+</nav>
+            <!--End of Nav Bar-->
+            </div>
+    
+     
+     
+    <div id="content-block" class="luna-show">
+        <div id="early-content">
+            
+            <div class="blog-banner">
+        <div class="container">  
+            <div class="row">
+                <div class="col-12 mx-auto banner-info col-lg-8">
+                                            <span class="h1 luna-heading mt-3">
+
+                                <a href="https://www.bnmetrics.com/blog">I WRITE CODE TO BE HAPPY.</a>
+
+                        </span>
+                                        
+                                        <div class="banner-text-style">
+                        <p>Recipes for  Python, PHP, Laravel and more</p>
+                    </div>
+                                    </div>
+                                <div class="col-12 col-lg-4 mt-3 luna-no-padding luna-blog-banner-image">
+                    <img src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/Blog.png" alt="blog banner alt">
+                </div>
+                            </div>
+        </div>
+    </div>
+            
+                    </div>
+        
+        <script>
+            $('#early-content').trigger('ready');
+        </script>
+  
+  
+<div id="content">
+
+    <div id="late-content">
+
+    <link rel="stylesheet" href="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/atom-one-dark.min.css">
+<script src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/highlight.min.js.download"></script>
+
+<div class="container">
+
+    <!-- row -->
+    <div class="row">
+
+        <div class="col-sm-12">
+            
+            <!-- blog-post -->
+            <div class="card luna-blog">
+                <div class="card-block mx-4">
+                    <h1 class="card-title luna-blog-title mt-4">How to Make a Contact Page in Laravel 5.4 in Three Simple Steps</h1>
+                    <p class="luna-blog-meta"> 
+                        <i class="icon-calendar-1"> </i>
+                        <span class="luna-blog-date">Last updated Apr 14, 2017</span> 
+                    </p>
+                    <hr>
+                    
+                    <div class="card-text luna-blog-content mt-5">
+                         <p>Making a contact page that allows you to receive mails seems a little daunting, but with laravel 5.4 it is a very simple process!</p>
+
+<p>Following this post, you will be able to <strong>easily make your own contact page</strong> and with the least amount of code you have to write.</p>
+<p>(In less than 10 minutes)</p>
+<p style="font-style:italic">so, let's get started!
+</p><p>Today, we're using Laravel 5.4&nbsp; <a href="https://laravel.com/docs/5.4/notifications">Notification</a> and Form Request Object components, to make a contact page like this:</p>
+<figure class="figure f-md-margin-16 mt-4">
+  <img src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/contactpage.png" class="figure-img img-fluid rounded figure1Sizing luna-figure-border" alt="A laravel contact form">
+  <figcaption class="figure-caption">Figure 1: Contact form Made with Laravel 5.4</figcaption>
+</figure>
+
+
+<p>&nbsp;</p>
+<h4 style="color: #fb503b;">Step 1: Create the Essentials</h4>
+<p>First, what are the basics we need to make this page?</p><p>
+</p><ul>
+<li><strong>Contact page controller</strong> for displaying the page and mail to admin</li>
+<li><strong>Form request class</strong> consist of validation rules</li>
+<li><strong>Notification class</strong> that handles the incoming mail</li>
+<li><strong>Model class</strong> that uses the notifiable trait stores the admin info</li>
+<li>configuring Larevel <strong>.env</strong> mail settings</li>
+<li>Define the <strong>Routes</strong></li>
+<li><strong>View</strong> to render the page</li>
+</ul>
+
+<p>Okay, let’s create first four classes using Laravel’s Artisan command:</p>
+<p><strong>Controller:</strong></p>
+<pre><code class="bash hljs">$ php artisan make:controller ContactController</code></pre>
+<p><strong>Form Request Class:</strong></p>
+<pre><code class="bash hljs">$ php artisan make:request ContactFormRequest</code></pre>
+<p><strong>Notification Class:</strong></p>
+<pre><code class="bash hljs">$ php artisan make:notification InboxMessage</code></pre>
+<p><strong>Model Class:</strong></p>
+<pre><code class="bash hljs">$ php artisan make:model Admin</code></pre>
+<p>&nbsp;</p>
+<p>Then in laravel's <span style="font-size:initial"><em>.env</em></span>, you want to add your email driver and credantials.</p><p>
+</p><p>In this tutorial, we will be using gmail, but if you want to use an API mail driver like Mailgun, be sure to check out my tutorial on 
+<a href="https://www.bnmetrics.com/blog/sending-email-using-mailgun-laravel5"><strong>Sending Emails with Maigun in Laravel</strong></a>.
+</p>
+<pre><code class="bash hljs">MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=YOURGMAILACCOUNT@gmail.com
+MAIL_PASSWORD=yourpassword
+MAIL_ENCRYPTION=ssl </code></pre>
+
+
+<p>&nbsp;</p>
+<p>Good job! Now we will need to <strong>define the route</strong>:</p>
+<p>In <span style="font-size:initial"><em>routes/web.php</em></span>, let’s add the following two routes, one for GET to display the form, another for POST to send the message:</p>
+<pre><code class="PHP hljs">Route::get(<span class="hljs-string">'/contact'</span>, <span class="hljs-string">'ContactController@show'</span>);
+Route::post(<span class="hljs-string">'/contact'</span>,  <span class="hljs-string">'ContactController@mailToAdmin'</span>); </code></pre>
+<p>&nbsp;</p>
+<p>Finally, with the view, you will need to go to your /resources/views directory and create file, in this tutorial we will call it contact.blade.php.</p>
+<p>&nbsp;</p>
+
+
+<p></p><h4 style="color: #fb503b;">Step 2: Populate the Classes </h4><p></p>
+<p class="h5">Controller </p>
+
+<p>We will need these two methods:</p>
+<ul>
+<li><strong>show() </strong>that handles the GET request for displaying the form</li>
+<li><strong>mailToAdmin() </strong>to POST the message to the website admin</li>
+</ul>
+<p>This is how we want the controller to look like:</p>
+<pre><code class="PHP hljs"><span class="hljs-keyword">Namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Notifications</span>\<span class="hljs-title">InboxMessage</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>\<span class="hljs-title">Controller</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Requests</span>\<span class="hljs-title">ContactFormRequest</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Admin</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">Class</span> <span class="hljs-title">ContactController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+	<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> 
+	</span>{
+		<span class="hljs-keyword">return</span> view(<span class="hljs-string">'contact'</span>);
+	}
+
+	<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mailToAdmin</span><span class="hljs-params">(ContactFormRequest $message, Admin $admin)</span>
+	</span>{        <span class="hljs-comment">//send the admin an notification</span>
+		$admin-&gt;notify(<span class="hljs-keyword">new</span> InboxMessage($message));
+		<span class="hljs-comment">// redirect the user back</span>
+		<span class="hljs-keyword">return</span> redirect()-&gt;back()-&gt;with(<span class="hljs-string">'message'</span>, <span class="hljs-string">'thanks for the message! We will get back to you soon!'</span>);
+	}
+}
+</code></pre>
+
+<p>Notice how we need a form request object and an Admin model object for the<strong> mailToAdmin() </strong>method?</p>
+<p>Okay, now we can make these two classes functional!</p>
+
+<p>&nbsp;</p>
+<p class="h5">Request Form Class</p>
+<p>As the name implies, ContactFormRequest will be in charge of handling the form request rules.</p>
+<p>In <span style="font-size:initial"><em>App/Http/Requests/ContactFormRequest.php</em></span>, we will need to change the return value in authorize() to <strong>true</strong>, and add the rules to the <strong>rules()</strong> method which is already provided for you, like so:</p>
+<pre><code class="PHP hljs"><span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Requests</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Foundation</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">FormRequest</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ContactFormRequest</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">FormRequest</span>
+</span>{
+  
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">authorize</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+ 
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rules</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> [
+            <span class="hljs-string">'name'</span> =&gt; <span class="hljs-string">'required|max: 255'</span>,
+            <span class="hljs-string">'email'</span> =&gt; <span class="hljs-string">'required|email|max: 255'</span>,
+            <span class="hljs-string">'message'</span> =&gt; <span class="hljs-string">'required'</span>,
+        ];
+    }
+}
+</code></pre>
+
+<p>&nbsp;</p>
+<p class="h5">Admin Model Class:</p>
+<p>For the admin information such as name and email address, I propose <strong>creating a dedicated file</strong> in the config directory for flexibility and reusability.</p>
+<p>So we will create the file <span style="font-size:initial"><em>config/admin.php</em>:</span></p>
+<pre><code class="PHP hljs"><span class="hljs-keyword">Return</span> [
+   
+    <span class="hljs-string">'email'</span> =&gt; <span class="hljs-string">'example@gmail.com'</span>,
+    <span class="hljs-string">'name'</span> =&gt; <span class="hljs-string">'your_name'</span>,
+     
+];
+</code></pre>
+<p>And yes! You can use any email address you want to receive messages from the contact form!</p>
+
+
+<p>&nbsp;</p>
+<p>In order for the Admin object to be available to access notify() method, we will need to import the <strong>Notifiable </strong>trait provided by Laravel:</p>
+<pre><code class="PHP hljs"><span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Notifications</span>\<span class="hljs-title">Notifiable</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-keyword">use</span> <span class="hljs-title">Notifiable</span>;
+
+    <span class="hljs-keyword">protected</span> $admin;
+    <span class="hljs-keyword">protected</span> $email;
+	
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">$this</span>-&gt;admin = config(<span class="hljs-string">'admin.name'</span>);
+        <span class="hljs-keyword">$this</span>-&gt;email = config(<span class="hljs-string">'admin.email'</span>);
+    }
+}
+
+</code></pre>
+
+<p>&nbsp;</p>
+<p class="h5">Notification:</p>
+<p>If you are not yet familiar with Notifications, don’t worry, <em>it’s very simple!</em></p>
+<p>&nbsp;</p>
+<p>You can find the notification class we created with artisan command in <span style="color: #a61c1c;">App/Notifications</span> directory, you will see many methods are already there.</p>
+<p>In our <span style="font-size: initial"><em>App/Notifications/InboxMessage.php</em></span>, we just need to change a few things.</p>
+<p>&nbsp;</p>
+<p><strong>First, Import our ContactFormRequest in the beginning of the file:</strong></p>
+<pre><code class="PHP hljs"><span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Requests</span>\<span class="hljs-title">ContactFormRequest</span>;</code></pre>
+<p><strong>Then add a protected property and pass to the constructor methods,</strong> this property should be an object of ContactFormRequest:</p>
+<pre><code class="PHP hljs"><span class="hljs-keyword">protected</span> $message;
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(contactFormRequest $message)</span>
+    </span>{
+        <span class="hljs-keyword">$this</span>-&gt;message = $message;
+    }
+</code></pre>
+<p><strong>Finally, we want to populate our mail message in the toMail() Method!</strong></p>
+<pre><code class="PHP hljs"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toMail</span><span class="hljs-params">($notifiable)</span>
+    </span>{
+        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">new</span> MailMessage)
+                    -&gt;subject(config(<span class="hljs-string">'admin.name'</span>) . <span class="hljs-string">", you got a new message!"</span>)
+                    -&gt;greeting(<span class="hljs-string">" "</span>)
+                    -&gt;salutation(<span class="hljs-string">" "</span>)
+                    -&gt;from(<span class="hljs-keyword">$this</span>-&gt;message-&gt;email, <span class="hljs-keyword">$this</span>-&gt;message-&gt;name)
+					-&gt;line(<span class="hljs-keyword">$this</span>-&gt;message-&gt;message);
+    }
+</code></pre>
+
+<p style="font-size:larger"><strong>Notice how to pass space to both greeting() and salutation() methods?</strong></p>
+<p>This is because Laravel Notifications <span style="color: #a61c1c;">comes with default messages for salutation and greeting</span>, which are specifically for outbound mails. In this case, we want to override them to nothing for inbound mails.</p>
+
+<p>&nbsp;</p>
+
+<h4 style="color: #fb503b;">Step 3: Make the Routes and the View</h4>
+
+<p>Now we have made all the necessary “backend” stuff.</p>
+<p>let’s make this available to the users!</p>
+<p>To do this, we will need to make the HTML template.</p>
+<p>&nbsp;</p>
+<p class="h5">Get A boilerplate!</p>
+
+<p>Generally, for views you want to have a master layout template, which is the boilerplate for your website.</p>
+<p><strong>If you have already have a master layout template, <a href="https://www.bnmetrics.com/blog/simple-contact-page-tutorial-laravel-54#contact-page-view">click here to skip.</a><a></a></strong></p><a>
+<p>We will create another blade template file called <span style="font-size: initial"><em>layout.blade.php</em></span>:</p>
+
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"{{ config('app.locale') }}"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span> 
+	<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span> 
+	<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+
+	<span class="hljs-comment">&lt;!-- CSRF Token --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"csrf-token"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"{{ csrf_token() }}"</span>&gt;</span>
+
+	<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>{{ config('app.name') }}<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+	<span class="hljs-comment">&lt;!-- Styles --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/css/app.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+	
+	<span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+		<span class="hljs-built_in">window</span>.Laravel = {!! json_encode([
+		<span class="hljs-string">'csrfToken'</span> =&gt; csrf_token(),
+		]) !!};
+	</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/js/app.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+	
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+@yield('content')
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+
+<p><strong>Note: If you have not used Laravel Mix to pull in Bootstrap and jquery, please replace the &lt;link&gt; and the &lt;script&gt; tag that are currently referencing css/app.css and /js/app.js, to respective path of these resources.</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>For reference:</p>
+</a><ul><a>
+</a><li><a></a><a href="https://v4-alpha.getbootstrap.com/getting-started/download/">Bootstrap Download Link</a></li>
+<li><a href="https://jquery.com/download/">JQuery Download Link</a></li>
+</ul>
+
+<p>&nbsp;</p>
+<p class="h5" id="contact-page-view">Contact Page View</p>
+<p>As we have created the file contact.blade.php in step one, <strong>let’s add the HTML content on to it!</strong></p>
+<p>However, you can design your contact page however you want, the code below allows you to make a basic contact form.</p>
+<p>In the <span style="font-size:initial"><em>/resource/views/contact.blade.php</em></span>:</p>
+<pre><code class="html hljs xml">@extends('layout')
+
+@section('content')
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-2 text-center"</span>&gt;</span>Contact Us<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+	
+	@if(session('message'))
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'alert alert-success'</span>&gt;</span>
+		{{ session('message') }}
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	@endif
+	
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-6"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-horizontal"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/contact"</span>&gt;</span>
+			{{ csrf_field() }} 
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"Name"</span>&gt;</span>Name: <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Your name"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">required</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email: <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"john@example.com"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">required</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"message"</span>&gt;</span>message: <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control luna-message"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"message"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Type your messages here"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"message"</span> <span class="hljs-attr">required</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Send"</span>&gt;</span>Send<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- /container --&gt;</span>
+@endsection
+</code></pre>
+
+<p>That’s it and great job! Now you can go over to your /contact page and try it out!</p>
+<p>&nbsp;</p>
+<p>Once you send the messages on your contact page, you should be receiving an email in your inbox looking like this:</p>
+
+<figure class="figure f-md-margin-10 mt-4">
+  <img src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/inbox-message-example.png" class="figure-img img-fluid rounded figure2Sizing luna-figure-border" alt="A laravel contact form">
+  <figcaption class="figure-caption">Figure 2: Inbox Message Example</figcaption>
+</figure>
+
+<p>&nbsp;</p>
+<h4 style="color: #fb503b;">Final Note</h4>
+<p>You can also customize the design of your inbox message however you want.</p>
+<p>All you need to do is with an artisan command:</p>
+<pre><code class="bash hljs">$ php artisan vendor:publish --tag=laravel-mail</code></pre>
+<p>With this, you should be able to see a new directory called <strong>vendor </strong>in your <em>resources/views</em>.</p>
+                    </div>
+                    
+                    
+                    <div class="mt-5">
+                        <hr>
+                        <i class="icon-tags"></i><span class="h5"> Tags</span>
+                        <ul class="list-group luna-list-horizontal mt-3 mb-5">
+                                                        <li class="list-unstyled luna-blog-tag" role="button"><a href="https://www.bnmetrics.com/blog?tag=Laravel">Laravel</a></li>
+                                                        <li class="list-unstyled luna-blog-tag" role="button"><a href="https://www.bnmetrics.com/blog?tag=php">php</a></li>
+                                                    </ul>
+                    </div>
+                    
+                    <hr>
+                    
+                   
+                    
+                </div>
+            </div><!-- /.blog-post -->
+
+            <div class="mt-5">
+                        <div id="disqus_thread"><iframe id="dsq-app3152" name="dsq-app3152" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 1599px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'https://www.bnmetrics.com/blog/simple-contact-page-tutorial-laravel-54';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'blog-3'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://bonnenuitmetrics.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="<a class="vglnk" href="https://disqus.com/?ref_noscript" rel="nofollow"><span>https</span><span>://</span><span>disqus</span><span>.</span><span>com</span><span>/?</span><span>ref</span><span>_</span><span>noscript</span></a>">comments powered by Disqus.</a></noscript>
+                                                        
+            </div>
+        </div>   
+
+        
+         
+                  
+        <script>
+             $('#sideNav').trigger('ready');
+        </script>
+         
+                     
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+    
+    </div>
+    <script>
+        $('#late-content').trigger('ready');
+    </script>
+</div>
+</div> <!---end of wrapper -->
+
+        <footer class="footer">
+        
+        <div style="background-color: #e8edef">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12 col-md-6 my-3 luna-footer-sec2">
+                <div class="my-md-5">
+                    <div class="h1 my-4">Updates and News?</div>
+                    <div class="luna-nl-content">Subscribe to my newsletter, and you will be the first to know!</div> 
+
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 my-3">
+                <div class="text-center mb-4">
+                    <img class="img-responsive" src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/envelope.png">
+                </div>
+                
+                <div class="text-center mx-lg-5 px-lg-3 ml-md-2">
+                    <div class="container">
+    <form class="form-horizontal newsletterforms" method="POST" action="https://www.bnmetrics.com/newsletter/subscribe">
+        <input type="hidden" name="_token" value="5d1TGTmww8u7LW1Ci3nndqZIR5euIKzwBIw3xOKh">
+        
+        <div class="form-group">
+            <input type="text" class="form-control luna-newsletter-form" id="email" placeholder="john@example.com" name="email" required="required">
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" class="newsletterSubmit btn luna-newsletter-button luna-bg-animated" value="submit">SIGN UP</button>
+        </div>      
+    </form>
+</div>                </div>
+            </div>
+
+        </div>
+    </div>
+</div>        
+        <div class="container luna-footer-sec1">
+            <div class="row py-md-2">
+                <div class="col-12 col-md-3 luna-my-sm-2 luna-footer-inlinks">
+                    <div class="text-center luna-strToUpper mt-lg-4 mt-md-3">
+                        <a class="luna-font-bigger" href="https://www.bnmetrics.com/about">ABOUT</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 luna-my-sm-2 mt-2 luna-footer-inlinks">
+                    <div class="text-center">
+                        <a href="https://www.bnmetrics.com/">
+                            <img class="luna-site-icon" src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/bunny-icon.png" alt="logo">
+                            <span class="luna-strToUpper luna-sitename-sec1"> Bonne Nuit Metrics</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 luna-my-sm-2">
+                    <div class="text-center luna-strToUpper mt-lg-4 mt-md-3">
+                    <a class="luna-font-bigger" href="https://www.bnmetrics.com/contact">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="container-fluid footer-bottom">
+            <div class="row py-md-2">
+                <div class="col-12 col-md-6 mb-md-2">
+                    <span class="luna-sitename">© Bonne Nuit Metrics 2018.</span>
+                    <span class="luna-footer-message">Crafted with Laravel by Luna, with love.</span>
+                    <hr>
+                </div>
+                <div class="col-12 col-md-6 mt-2">
+                    <ul class="social-icon">
+                       <li>
+    <a href="https://github.com/BNMetrics" title="" data-toggle="tooltip" data-placement="top" target="_blank" data-original-title="Github">
+      <i class="icon-github-1"></i>
+    </a>
+</li>
+<li>
+    <a href="https://twitter.com/Luna_BNMetrics" title="" data-toggle="tooltip" data-placement="top" target="_blank" data-original-title="Twitter">
+      <i class="icon-twitter"></i>
+    </a>
+</li>
+<li>
+    <a href="https://bitbucket.org/BN_Metrics/" title="" data-toggle="tooltip" data-placement="top" target="_blank" data-original-title="Bitbucket">
+      <i class="icon-bitbucket"></i>
+    </a>
+</li>
+<li>
+    <a href="https://codepen.io/BN_Metrics" title="" data-toggle="tooltip" data-placement="top" target="_blank" data-original-title="Codepen">
+      <i class="icon-codeopen"></i>
+    </a>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+         
+   
+    </div><!-- Content Block -->
+     <!--Pop up-->
+    <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelleby="newsletterSignup" style="display:none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header luna-newsletter-heading">
+              <h5 class="modal-title" id="newsletterSignup"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body" style="font-family:Roboto">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+<iframe style="display: none;" src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/saved_resource(1).html"></iframe><iframe id="zotero-modal-prompt" src="./How to Make a Contact Page in Laravel 5.4 in Three Simple Steps _ Bonne Nuit Metrics_files/modalPrompt.html" style="position: fixed; top: 0px; right: 0px; width: 100%; height: 100%; border: none; z-index: 2147483647; display: none;"></iframe></body></html>

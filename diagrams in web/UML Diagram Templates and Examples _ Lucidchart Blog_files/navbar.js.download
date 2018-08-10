@@ -1,0 +1,31 @@
+(function() {
+
+  var throttle = function(fn, delay) {
+    delay || (delay = 100);
+    var throttle = false;
+    return function() {
+      if (throttle){ return; } // you no enter
+      throttle = setTimeout(function(){
+        // tail it - and do one last ajax request
+        fn.apply(this, arguments);
+        throttle = false;
+        }, delay);
+      fn.apply(this, arguments);
+    };
+  };
+
+  function onScroll() {
+    var classList = document.querySelector(".main-navigation").classList;
+    if (window.scrollY > 60) {
+      classList.add('scrolled');
+    }
+    else {
+      classList.remove('scrolled');
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener('scroll', throttle(onScroll, 100));
+  });
+
+}());

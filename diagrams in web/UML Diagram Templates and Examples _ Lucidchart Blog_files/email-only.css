@@ -1,0 +1,163 @@
+.email-only-form * {
+  font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.email-only-form {
+  background-color: white;
+  border: 1px solid #f78c20;
+  margin-bottom: 2em;
+  padding: 2em;
+  max-width: 100%;
+}
+
+.email-only-form h4 {
+  color: #f78c20;
+  margin-bottom: 44px;
+}
+
+.email-only-form input {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #76818c;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: #82818E;
+}
+
+.email-only-form input:focus {
+  box-shadow: none;
+  border-color: none;
+}
+
+.email-only-form button {
+  display: block;
+  width: 100%;
+  background: #f78d1e;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #f78d1e;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 0;
+  outline: none;
+}
+
+.email-only-form button:hover {
+  background: transparent;
+  color: #f78d1e;
+}
+
+.email-only-form .tos {
+  font-size: 12px;
+  font-weight: 400;
+  color: #afbbc6;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.email-only-form .tos a,
+.email-only-form .tos a:hover,
+.email-only-form .tos a:focus,
+.email-only-form .tos a:active{
+    text-decoration: underline;
+    box-shadow: none;
+    border: none;
+    background: none;
+    color: #afbbc6;
+}
+
+.email-only-form .googleLogin {
+  display: block;
+  width: 100%;
+  border: 1px solid #3D4752;
+  color: #3D4752;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+  padding: 2px 0;
+  margin-bottom: 20px;
+}
+
+.email-only-form .googleLogin:hover {
+  background: transparent;
+  border: 1px solid #f78d1e;
+  color: #f78d1e;
+}
+
+.email-only-form .googleLogin img {
+  height: 20px;
+}
+
+.email-only-form .google-logo {
+  display: inline-block;
+  width: 55px;
+  fill: #3d4752;
+  top: 5px;
+  position: relative;
+}
+
+.email-only-form .orText {
+  margin: 20px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #76818c;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #76818c;
+  line-height: 0.1em;
+}
+
+.email-only-form .orText span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 500px) {
+  :not(.email-only-force-stacked) > .email-only-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  :not(.email-only-force-stacked) > .email-only-form input {
+    order: 0;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  :not(.email-only-force-stacked) > .email-only-form button {
+    order: 1;
+    border-radius: 5px;
+  }
+
+  :not(.email-only-force-stacked) > .email-only-form input,
+  :not(.email-only-force-stacked) > .email-only-form button {
+    flex: 0 1 100%;
+  }
+
+  :not(.email-only-force-stacked) > .email-only-form .googleLogin {
+    display: inline-block;
+    flex: 0 1 100%;
+    order: 3;
+  }
+
+  :not(.email-only-force-stacked) > .email-only-form .orText {
+    order: 2;
+  }
+
+  :not(.email-only-force-stacked) > .email-only-form .tos {
+    flex: 0 1 100%;
+    order: 4;
+    text-align: left;
+  }
+}

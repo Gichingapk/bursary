@@ -1,0 +1,3 @@
+window.rtbsBidA = (typeof window.rtbsBidA  === 'object' ) ? window.rtbsBidA : {};
+window.rtbsBidA["956283721"] = {no_bid: true, variant: 0, tp: "https://qsearch-a.akamaihd.net/log?logid=kfk&evtid=rtbstl&url=https%3A%2F%2Fwww.freeprojectz.com%2Fdfd%2Fbanking-management-system-dataflow-diagram&domain=freeprojectz.com&size=336x280&ext_user_id=6766588490299990448&iid=0&auction_id=300ec3c5616a47d38e995110a067077d&ip=41.89.227.171&crid=956283721&b4b=0.59&b9b=0.0&b72b=0.0&rtbW=0&app_dis=0&cc=KE&bname=&bid_type=-1&bmlevel=0<cm_win_macro>", bl: [], size: "336x280", bidData: "vv=1||btd=655360||last=${last_flag}||isRef=${refresh_counter}||erpm=0.3||fbb=0||url_l=5||bid=0.59||device_l=5||${ClientYLog}||variant=0"};
+;
